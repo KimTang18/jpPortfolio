@@ -1,0 +1,135 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+a.navbar-brand img {
+    width: 50px;
+}
+
+.nav-link {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+}
+
+
+
+ul.navbar-nav li a {
+    font-size: 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: #eeb22b;
+}
+
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+    color: #e25933;
+}
+.content{
+    
+    margin-top: 160px;
+}
+.content1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #fff 20%, 
+    #65c7f7 40%, #0052d4 60%, #fff 80%);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    text-fill-color:transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 2s linear infinite;
+}
+@keyframes animate {
+    to{
+        background-position: 200% center;
+    }
+}
+.content2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button.play:hover {
+    color: #eeb22b;
+    background: transparent;
+	border: 2px solid #e15433;
+}
+button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+button.play {
+    height: 40px;
+    width: 150px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+	background-image: linear-gradient(to right, #eeb22b , #e15433);
+    color: #fff;
+	border: none;
+}
+
+.h1 img {
+	width: 35px;
+	margin-top: -8px;
+}
+
+.about {
+	background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(img/About-BG.png);
+	background-size: cover;
+	background-position: center;
+}
+
+footer span {
+	color: #eeb22b;
+}
+
+#contact-form input, #contact-form textarea {
+    color: #e15433;
+    border: 2px solid #eeb22b;
+    border-radius: 10px;
+	outline: none;
+	box-shadow: none;
+}
+
+.mobPlay {
+		display: none;
+}
+
+@media screen and (max-width: 760px) {
+	.play {
+		display: none;
+	}
+
+	.mobPlay {
+		display: block;
+		margin-left: 20px;
+	}
+	
+    .cover-content h1 {
+        font-size: 36px;
+        font-weight: bold;
+        padding-top: 30px;
+    }
+
+    .cover-content h6 {
+        font-size: 15px;
+    }
+}
